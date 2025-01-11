@@ -131,19 +131,17 @@ function Frame4({ selectedIndex, tableRows, nameColumn, rowData, values, selecte
             <div class="resume_border">
                 {tableRows.map((columnName, index) => {
                     if (columnName.includes("resume")) {
-                        if (rowData[index].includes("drive.google.com")) {
-                            const ID = extractGoogleDriveId(rowData[index]);
-                            return (
-                                <iframe 
-                                key={index} 
-                                src={`https://drive.google.com/file/d/${ID}/preview`} 
-                                width="800" 
-                                height="484"
-                                style={{ border: "none" }}></iframe>
-                            );
-                        } else {
-                            return <p id="resume-alt">Applicant has no resume</p>
-                        }
+                        const ID = extractGoogleDriveId(rowData[index]);
+                        return (
+                            <iframe 
+                            key={index} 
+                            src={`https://drive.google.com/file/d/${ID}/preview`} 
+                            width="800" 
+                            height="484"
+                            style={{ border: "none" }}></iframe>
+                        );
+                    } else {
+                        <p id="resume-alt">Applicant has no resume</p>
                     }
                 })}
             </div>
