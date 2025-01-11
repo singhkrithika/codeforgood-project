@@ -1,0 +1,82 @@
+body {
+    background-color: #EEFEFC;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #D8F2EF;
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container-fluid a img {
+    max-height: 60px;
+}
+
+.text {
+    font-size: 60px;
+    margin-top: 200px; 
+    text-align: center;
+}
+
+.input_file {
+    display: inline-block;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.input_file input[type="file"] {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 14.5%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+select, button {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.upload {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}

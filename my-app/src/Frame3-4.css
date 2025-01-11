@@ -1,0 +1,178 @@
+body {
+    background-color: #EEFEFC;
+    padding-top: 80px;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #D8F2EF;
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container-fluid a img {
+    max-height: 60px;
+}
+
+.frame3-container, .frame4-container {
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+#applicant-name {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#resume {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#resume-alt {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.resume_border {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    font-size: 60px;
+    margin-top: 200px; 
+    text-align: center;
+}
+
+.switch_applicant_text {
+  font-size: 40px;
+  margin-top: 80px; 
+  text-align: center;
+}
+
+/* Table Styling */
+table.details-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details-table th, .details-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.details-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.details-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.details-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .frame3-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .applicant-name {
+        font-size: 30px;
+    }
+
+    .details-table {
+        font-size: 14px;
+    }
+}
+
+.input-container {
+  margin: 20px auto;
+  width: 80%;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.input-container label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+#score-input,
+#notes-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.save-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.finish {
+    margin-top: 10px;
+  }
+  
+  .finish button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .finish button:hover {
+    background-color: darkgreen;
+  }
